@@ -12,6 +12,10 @@ html{
   box-sizing: inherit;
 }
 
+input, button{
+	outline: none;
+}
+
 html, body { position: relative;height: 100%;}
 html,ul{margin: 0; padding: 0;}
 body{margin: 0;padding: 0;font: 15px/1.5em 'Roboto', sans-serif;color: #000;background: #FFF;}
@@ -50,7 +54,7 @@ h1 {text-transform:uppercase;font-size: 19px;margin: 0 0 1.2em;}
 .logo {
     margin: 20px 0 5px;
 }
-.work-time{float:right;padding-top: 22px;font-size: 12px; color: #2a2b3d;}
+.work-time{float:right;padding-top: 22px;font-size: 12px; color: #2a2b3d; text-transform: uppercase;}
 
 .telefon {float:right;padding: 30px 0 0 20px;}
 .telefon a {color:#000;font-size:40px;color: #2a2b3d;}
@@ -77,9 +81,10 @@ h1 {text-transform:uppercase;font-size: 19px;margin: 0 0 1.2em;}
 }
 .search-box input,.search-box button, .search-box select{border: none;height:29px;padding:0;display: inline-block;}
 .search-box input {width:48%;padding-left:15px;border-right: 1px solid #aaa;}
-.search-box select {border-left:1px solid #ddd;width: 34%;margin-right: -4px;}
-.search-box select optin {margin:0;padding:0}
-.search-box button {width: 18%;background: #ffba00!important;font-weight: bolder;border-radius: 0 3px 3px 0;}
+.search-box select {border-left:1px solid #ddd;width: 34%;margin-right: -4px; -webkit-appearance: none; -moz-appearance: none;
+  appearance: none; outline: none; padding-left: 5px;}
+.search-box select option {margin:0;padding:0; color: #9f9f9f;}
+.search-box button {width: 18%;background: #e5ad54!important;font-weight: bolder;border-radius: 0 3px 3px 0;}
 
 .maincontent {
     margin-bottom: 30px;
@@ -193,7 +198,7 @@ p {margin:0 0 1.4em;}
 
 
 .logo {}
-.work-time{float:right;padding-top:17px;font-size: 12px;}
+.work-time span{text-transform: uppercase;}
 
 .telefon {float:right;padding: 24px 0 0 20px}
 .telefon a {color:#000;font-size:40px}
@@ -306,6 +311,12 @@ p {margin:0 0 1.4em;}
     background: url(img/soc-seti.png);
     width: 262px;
     height: 42px;
+		list-style: none;
+		outline: 1px solid red;
+}
+
+.f-social a{
+
 }
 
 .telefon {}
@@ -353,10 +364,22 @@ p {margin:0 0 1.4em;}
     margin-bottom: 25px;
 }
 .f-social {
-    display: inline-block;
-    background: url(img/soc-seti.png);
-    width: 262px;
-    height: 42px;
+	float: right;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;;
+	text-align: left;
+  width: 20%;
+	list-style: none;
+}
+
+.f-social li{
+	display: inline-block;
+	height: 22px;
 }
 
 .main-nav {}
@@ -498,11 +521,12 @@ label[for="foto-small__2"]{
 .details li >div+div {color: #178ece;}
 .details .main-price{display:block;padding: 0;position: absolute;bottom: -90px;width: 100%;}
 .details .main-price>div {margin-bottom:10px}
+.main-price img{margin-right: 5px;}
 .t-price {font-size: 26px!important;font-weight: normal!important;}
 .how-many {margin: 19px 0;clear: both;padding: 0;float: none!important;display: inline-block;vertical-align: bottom;}
 .plus,.minus {display:inline-block;background:#eee;line-height: 39px;width: 42px;text-align: center;height: 39px;float: left;}
 .plus img,.minus img {vertical-align:middle}
-.how-many span{border: 1px solid #eee;height: 37px;line-height: 35px;display:inline-block;min-width: 59px;text-align: center;color: #444;vertical-align:middle;font-size: 20px;float: left;}
+.how-many span{border: 1px solid #eee;height: 39px;line-height: 35px;display:inline-block;min-width: 59px;text-align: center;color: #444;vertical-align:middle;font-size: 20px;float: left;}
 
 .related-items__content,
 .similar-items__content{
@@ -533,6 +557,7 @@ label[for="foto-small__2"]{
   display: inline-block;
   color: ##178ece;
   margin-bottom: 15px;
+	font-weight: 500;
 }
 
 .item__content img{
@@ -570,7 +595,26 @@ label[for="foto-small__2"]{
   width: 9px;
   height: 11px;
   left: 10px;
-  background: url('img/amount-large.png');
+	bottom: 5px;
+}
+
+.t-details .item__amount{
+	padding-left: 10px;
+}
+
+.t-details .item__amount::before{
+	left: 0;
+}
+
+.amount-large:before{
+	  background: url('img/amount-large.png');
+}
+.amount-small:before{
+	background: url('img/amount-small.png') no-repeat bottom;
+}
+
+.amount-middle:before{
+	background: url('img/amount-middle.png') no-repeat bottom;
 }
 
 .item__buy{
@@ -589,4 +633,9 @@ label[for="foto-small__2"]{
   right: 70px;
   top: 3px;
   background: url('img/cart-mini.png') no-repeat;
+}
+
+
+.other-books{
+	font-style: italic;
 }
