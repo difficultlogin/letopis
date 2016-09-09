@@ -89,12 +89,14 @@ h1 {text-transform:uppercase;font-size: 19px;margin: 0 0 1.2em;}
 .maincontent {
     margin-bottom: 30px;
 }
+
 .sidebar {
-    max-width: 300px;
+    width: 24%;
     box-sizing: border-box;
     float: left;
     padding: 0 10px 20px 15px;
     overflow: hidden;
+		outline: 2px solid;
 }
 .s-widgets {padding-bottom: 30px;margin-bottom: 25px;border-bottom: 1px solid #8ac1da;}
 .s-list li {list-style: url(img/tr-right.png);text-transform:uppercase;padding-left: 2px;margin-left: 21px;line-height: 32px;}
@@ -431,29 +433,6 @@ p {margin:0 0 1.4em;}
 .f-social {}
 
 
-.swiper-container {
-        width: 100%;
-        height: 100%;
-    }
-
-.swiper-slide {
-        text-align: center;
-        font-size: 18px;
-        background: #fff;
-        /* Center slide text vertically */
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: -webkit-flex;
-        display: flex;
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        -webkit-justify-content: center;
-        justify-content: center;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        -webkit-align-items: center;
-        align-items: center;
-    }
 
 .top-sliders {height: 270px;margin-bottom: 37px;}
 .bottom-sl-menu {width:100%;margin-bottom:20px}
@@ -599,7 +578,7 @@ label[for="foto-small__2"]{
 }
 
 .t-details .item__amount{
-	padding-left: 10px;
+	padding-left: 15px;
 }
 
 .t-details .item__amount::before{
@@ -635,7 +614,13 @@ label[for="foto-small__2"]{
   background: url('img/cart-mini.png') no-repeat;
 }
 
-
 .other-books{
 	font-style: italic;
+}
+
+.index-main-content{
+	float: right;
+	width: 75%;
+	height: 500px;
+	outline: 2px solid red;
 }
