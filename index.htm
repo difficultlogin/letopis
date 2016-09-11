@@ -29,261 +29,207 @@
 </head>
 
 <body>
-	<header id="tophead">
+	<header class="page-header">
 		<div class="top-line">
-			<div class="wrap">
-			<div class="top-in"><a href="#" class="cart">корзина</a></div>
-			<div class="top-in"><a href="#">регистрация</a></div>
-			<div class="top-in"><a href="#">вход</a></div>
-			<div class="top-text">Православные книги и другие товары: сегодня в продаже 5532 наименований</div>
+			<div class="wrapper clearfix">
+				<div class="top-line__text">Православные книги и другие товары: сегодня в продаже 5532 наименований</div>
+				<ul class="user-block flex">
+					<li class="user-enter"><a href="#" class="cart">вход</a></li>
+					<li class="user-register"><a href="#">регистрация</a></li>
+					<li class="user-cart"><a href="#">корзина</a></li>
+				</ul>
 			</div>
 		</div>
 
 		<div class="white-space">
-			<div class="wrap">
-				<img src="img/logo.png" alt="Летопись" class="logo">
-				<div class="telefon"><a href="tel:(495) 726-29-47">(495) <span class="b">726-29-47</span></a></div>
-	    	<div class="work-time"><span>ПН.-ПТ.: с 10:00 ДО 18:00</span><br><span>СБ.-ВС.: Выходные</span></div>
+			<div class="wrapper clearfix">
+				<img class="logo" src="img/logo.png" alt="Летопись">
+				<div class="contact-tel">
+					<a href="tel:(495) 726-29-47">(495)<span>726-29-47</span></a>
+				</div>
+	    	<div class="work-time">
+					<span>ПН.-ПТ.: с 10:00 ДО 18:00</span><br>
+					<span>СБ.-ВС.: Выходные</span>
+				</div>
+			</div>
+		</div>
+
+		<div class="lower-header">
+			<div class="wrapper">
+				<a class="catalog-link active" href="/catalog">Полный каталог товаров</a>
+				<nav class="main-nav">
+					<ul class="menu">
+						<li><a href="#">О нас</a></li>
+						<li><a href="#">Оплата и доставка</a></li>
+						<li><a href="#">Акции</a></li>
+						<li><a href="#">Магазины</a></li>
+						<li><a href="#">Контакты</a></li>
+					</ul>
+				</nav>
+				<div class="search-box">
+					<form action="/search.php" method="POST">
+					<input type="text" name="" id="" placeholder="Выбирайте...">
+					<select>
+						<option selected>Все разделы</option>
+						<option>Пункт 2</option>
+						<option>Пункт 3</option>
+						<option>Пункт 4</option>
+					</select>
+					<button>Найти</button>
+					</form>
+				</div>
 			</div>
 		</div>
 	</header>
-	<div class="full-line">
-		<div class="wrap lower-header">
-			<a class="catalog-link active" href="/catalog">Полный каталог товаров</a>
-			<nav class="main-nav">
-				<ul class="menu">
-					<li><a href="#">О нас</a></li>
-					<li><a href="#">Оплата и доставка</a></li>
-					<li><a href="#">Акции</a></li>
-					<li><a href="#">Магазины</a></li>
-					<li><a href="#">Контакты</a></li>
-			</ul>
-			</nav>
-			<div class="search-box">
-				<form action="/search.php" method="POST">
-				<input type="text" name="" id="" placeholder="Выбирайте...">
-				<select>
-					<option selected>Все разделы</option>
-					<option>Пункт 2</option>
-					<option>Пункт 3</option>
-					<option>Пункт 4</option>
-				</select>
-				<button>Найти</button>
-				</form>
-			</div>
-		</div>
-	</div>
-	<div class="wrap maincontent">
-		<aside class="sidebar">
-			<div class="s-widgets s-list">
-				<ul class="s-top-menu">
-					<li><a href="#">Новое в интернет-магазине</a></li>
-					<li><a href="#">Лидеры продаж</a></li>
-					<li><a href="#">Последние поступления</a></li>
-				</ul>
-			</div>
-			<div class="s-widgets subscribe">
-				<div class="b up sub-title">Подпишитесь на рассылку</div>
-				<p>Мы с радостью сообщим Вам о последних поступлениях книг  в нашем интернет-магазине</p>
-				<form action="" class="glav-subscribe" action+METHOD="POST"><input type="text" placeholder="Введите email"></input><button>Подписаться</button></form>
-			</div>
-			<div class="s-widgets s-menu">
-				<ul>
-					<li><a href="#">По жанрам</a>
-						<ul class="sub-menu">
-							<li><a href="#">Священное писание</a></li>
-							<li><a href="#">Молитвословы, каноны и акафисты</a></li>
-							<li><a href="#">Богослужебные книги</a></li>
-							<li><a href="#">Новоначальным</a></li>
-							<li><a href="#">Праздники</a></li>
-							<li><a href="#">Духовная проза и поэзия</a></li>
-							<li class="ative"><a href="#">Православные детские книги</a></li>
-							<li><a href="#">Семейная жизнь и воспитание детей</a></li>
-							<li><a href="#">Жития святых</a></li>
-							<li><a href="#">Жизнеописания подвижников</a></li>
-							<li><a href="#">Святые отцы</a></li>
-							<li><a href="#">Толкования</a></li>
-							<li><a href="#">Богословие</a></li>
-							<li><a href="#">Филосовия</a></li>
-							<li><a href="#">Церковь и общество</a></li>
-							<li><a href="#">История церкви</a></li>
-						</ul>
-					</li>
-					<li><a href="#">По формату</a></li>
-					<li><a href="#">Акции иуценка</a></li>
-					<li><a href="#">По популярности</a></li>
-					<li><a href="#">По цене</a></li>
-				</ul>
-			</div>
-		</aside>
-		<div class="main-content">
-			<section class="info-block">
-				<div class="line-bread">
-					<div class="right up">Эта книга также представлена в рубриках: &gt; Новые поступления</div>
-					<div class="breadcrumb"><a href="#">Православные книги</a> &gt; <a href="#">Жития святых</a></div>
+	<main>
+		<div class="wrapper clearfix">
+			<aside class="sidebar">
+				<div class="s-widgets s-list">
+					<ul class="s-top-menu">
+						<li><a href="#">Новое в интернет-магазине</a></li>
+						<li><a href="#">Лидеры продаж</a></li>
+						<li><a href="#">Последние поступления</a></li>
+					</ul>
 				</div>
-				<article>
-					<h1>Пустынники русского севера</h1>
-					<div class="tovar-box">
-						<div class="t-images-slider">
+				<div class="s-widgets subscribe">
+					<div class="sub-title">Подпишитесь на рассылку</div>
+					<p>Мы с радостью сообщим Вам о последних поступлениях книг  в нашем интернет-магазине</p>
+					<form action="" class="glav-subscribe" action+METHOD="POST"><input type="text" placeholder="Введите email"></input><button>Подписаться</button></form>
+				</div>
+				<div class="s-widgets s-menu">
+					<ul>
+						<li><a href="#">По жанрам</a>
+							<ul class="sub-menu">
+								<li><a href="#">Священное писание</a></li>
+								<li><a href="#">Молитвословы, каноны и акафисты</a></li>
+								<li><a href="#">Богослужебные книги</a></li>
+								<li><a href="#">Новоначальным</a></li>
+								<li><a href="#">Праздники</a></li>
+								<li><a href="#">Духовная проза и поэзия</a></li>
+								<li class="ative"><a href="#">Православные детские книги</a></li>
+								<li><a href="#">Семейная жизнь и воспитание детей</a></li>
+								<li><a href="#">Жития святых</a></li>
+								<li><a href="#">Жизнеописания подвижников</a></li>
+								<li><a href="#">Святые отцы</a></li>
+								<li><a href="#">Толкования</a></li>
+								<li><a href="#">Богословие</a></li>
+								<li><a href="#">Филосовия</a></li>
+								<li><a href="#">Церковь и общество</a></li>
+								<li><a href="#">История церкви</a></li>
+							</ul>
+						</li>
+						<li><a href="#">По формату</a></li>
+						<li><a href="#">Акции и уценка</a></li>
+						<li><a href="#">По популярности</a></li>
+						<li><a href="#">По цене</a></li>
+					</ul>
+				</div>
+			</aside>
+
+			<div class="page-content">
+				<section class="info-block">
+					<div class="line-bread clearfix">
+						<div class="index-right">Эта книга также представлена в рубриках: &gt; Новые поступления</div>
+						<div class="breadcrumbs">
+							<a href="#">Православные книги</a> &gt; <a href="#">Жития святых</a>
+						</div>
+					</div>
+					<h1 class="tovar-name">Пустынники русского севера</h1>
+					<div class="tovar-box clearfix">
+						<div class="foto-slider">
 							<input type="radio" name="radio" id="foto-small__1" checked>
 							<input type="radio" name="radio" id="foto-small__2">
 							<label for="foto-small__1"><img src="img/small-foto__1.png"></label>
 							<label for="foto-small__2"><img src="img/small-foto__2.png"></label>
-							<div class="others">
-								<img class="foto-small__1" src="img/big-foto__1.png">
-								<img class="foto-small__2" src="http://placehold.it/351x431">
+							<div class="big-pics">
+								<img class="foto-big__1" src="img/big-foto__1.png">
+								<img class="foto-big__2" src="http://placehold.it/351x431">
 							</div>
 						</div>
-
 						<div class="t-details">
-							<ul class="details">
-								<li>
-									<div>Артикул:</div>
-									<div>25383</div>
-								</li>
-								<li>
-									<div>Формат(мм):</div>
-									<div>215*10*305</div>
-								</li>
-								<li>
-									<div>Количество страниц:</div>
-									<div>72</div>
-								</li>
-								<li>
-									<div>Год издания:</div>
-									<div>2015</div>
-								</li>
-								<li>
-									<div>ISBN:</div>
-									<div>978-5-906652-47-8</div>
-								</li>
-								<li>
-									<div>Гриф ИСРПЦ:</div>
-									<div>P-15-508-0428</div>
-								</li>
-								<li>
-									<div>Количество в упаковке:</div>
-									<div>10</div>
-								</li>
-								<li>
-									<div>Издательство:</div>
-									<div>Кожеозерский Богоявленский монастырь<div>
-										<a class="other-books" href="#">Все книги этого издательства</a>
-								</li>
-								<li>
-									<div>Тип обложки:</div>
-									<div>твердая</div>
-								</li>
-								<li>
-									<div>Бумага:</div>
-									<div>мелованная</div>
-								</li>
-								<li>
-									<div>Вес, гр:</div>
-									<div>556</div>
-								</li>
-								<li class="main-price">
-									<div class="t-price">365р.<br><a class="buy-btn up"  href="#">Купить</a></div>
-									<div>
-										<a class="item__amount amount-middle">Средне</a>
-										<br>
-										<div class="how-many">
-											<a href="#" class="plus"><img src="img/minus.png" alt=""></a>
-											<span>1</span>
-											<a href="#" class="minus"><img src="img/plus.png" alt=""></a>
-										</div>
-									</div>
-								</li>
-							</ul>
-						</div>
-					</div>
-					<div class="b up desc-title">Дополнительная информация о книге</div>
-					<div class="description-box">
-						<div class="description-title">
-							<p>Житие преподобного и богоносног отца нашего Серапиона Кожеезерского. Описание жизни  и чудес святого преподобного Никодима, Кожеезерского чудотворца Жизнь преподобного Никодима, отшельника Хозьюгского. Чудеса преподобного отца нашего Никодим во время земной его отшельнической жизни. Поледние дни и кончина преподобного Никодима. Чудеса преподобного Никодима по его преставлении. Канон и молитвы проподобному Никодиму Кожеезерскому.</p>
-						</div>
-						<div class="otziv-box">
-							<div class="otziv-num up b">Отзывы (1)</div>
-							<a href="#">Оставить свой отзыв</a>
-							<div class="otziv">
-								<span class="otziv-text">Замечательная книга читали всей семьей</span>
-								<div><span class="b">Мария</span> Санкт-петербург</div>
+							<div class="column-left">
+								<ul class="spec-name">
+									<li>Артикул:</li>
+									<li>Формат(мм):</li>
+									<li>Количество страниц:</li>
+									<li>Год издания:</li>
+									<li>ISBN:</li>
+									<li>Гриф ИСРПЦ:</li>
+									<li>Количество в упаковке:</li>
+									<li>Издательство:</li>
+									<br><br>
+									<li>Тип обложки:</li>
+									<li>Бумага</li>
+									<li>Вес, гр:</li>
+								</ul>
+								<div class="tovar-price">365р.</div>
+								<button class="tovar-buy">Купить</button>
 							</div>
-							<a href="#" class="otziv-link">Ответить</a>
+							<div class="column-right">
+								<ul class="spec-info">
+									<li>25383</li>
+									<li>215*10*305</li>
+									<li>72</li>
+									<li>2015</li>
+									<li>978-5-906652-47-8</li>
+									<li>P-15-508-0428</li>
+									<li>10</li>
+									<li>Кожеозерский Богоявленский монастырь <span>Все книги этого издательства</span></li>
+									<li>твердая</li>
+									<li>мелованная</li>
+									<li>556</li>
+								</ul>
+								<a class="item__amount amount-middle">Средне</a>
+								<div class="how-many">
+									<button class="minus">-</button>
+									<div class="number">1</div>
+									<button clas="plus">+</button>
+								</div>
+							</div>
 						</div>
 					</div>
-				</article>
-			</section>
-			<section class="related-items">
-				<div class="related-items__title">Похожие книги</div>
-				<div class="related-items__content">
-					<div class="item">
-						<a class="item__title">Азбука для православных детей</a>
-						<div class="item__content clearfix">
-							<img src="http://placehold.it/107x145">
-							<p>Книга "Русский патрик" знакомит читателя с жителями самых изветстных русских святых: князей и крестьян, патриархов и простых монахов. Она рассказывает о жизни святых, об их смиренном служении Богу и людям, о мужестве и стойкости...</p>
-						</div>
-						<div class="item__price-block clearfix">
-							<div class="item__price">85р.</div>
-							<a class="item__amount amount-small">Много</a>
-							<a class="item__buy" href="#">Купить</a>
-						</div>
+					<div class="desc-title">Дополнительная информация о книге</div>
+					<p class="desc-content">
+						Житие преподобного и богоносног отца нашего Серапиона Кожеезерского. Описание жизни  и чудес святого преподобного Никодима, Кожеезерского чудотворца Жизнь преподобного Никодима, отшельника Хозьюгского. Чудеса преподобного отца нашего Никодим во время земной его отшельнической жизни. Поледние дни и кончина преподобного Никодима. Чудеса преподобного Никодима по его преставлении. Канон и молитвы проподобному Никодиму Кожеезерскому.
+					</p>
+				</section>
+				<section class="feedback-container">
+					<div class="feedback-num">Отзывы <span>(1)</span></div>
+					<a class="leave-feedback" href="#">Оставить свой отзыв</a>
+					<div class="feedback-text">
+						<p>Замечательная книга читали всей семьей</p>
+						<div class="feedback-from"><span>Мария</span> Санкт-петербург</div>
 					</div>
-					<div class="item">
-						<a class="item__title">Азбука для православных детей</a>
-						<div class="item__content clearfix">
-							<img src="http://placehold.it/107x145">
-							<p>Книга "Русский патрик" знакомит читателя с жителями самых изветстных русских святых: князей и крестьян, патриархов и простых монахов. Она рассказывает о жизни святых, об их смиренном служении Богу и людям, о мужестве и стойкости...</p>
+					<a class="feedback-respond" href="#">Ответить</a>
+				</section>
+				<section class="related-items">
+					<div class="related-items__title">Похожие книги</div>
+					<div class="related-items__content">
+						<div class="item">
+							<a class="item__title">Азбука для православных детей</a>
+							<div class="item__content clearfix">
+								<img src="http://placehold.it/107x145">
+								<p>Книга "Русский патрик" знакомит читателя с жителями самых изветстных русских святых: князей и крестьян, патриархов и простых монахов. Она рассказывает о жизни святых, об их смиренном служении Богу и людям, о мужестве и стойкости...</p>
+							</div>
+							<div class="item__price-block clearfix">
+								<div class="item__price">85р.</div>
+								<a class="item__amount amount-small">Мало</a>
+								<a class="item__buy" href="#">Купить</a>
+							</div>
 						</div>
-						<div class="item__price-block clearfix">
-							<div class="item__price">85р.</div>
-							<a class="item__amount amount-small">Мало</a>
-							<a class="item__buy" href="#">Купить</a>
+						<div class="item">
+							<a class="item__title">Азбука для православных детей</a>
+							<div class="item__content clearfix">
+								<img src="http://placehold.it/107x145">
+								<p>Книга "Русский патрик" знакомит читателя с жителями самых изветстных русских святых: князей и крестьян, патриархов и простых монахов. Она рассказывает о жизни святых, об их смиренном служении Богу и людям, о мужестве и стойкости...</p>
+							</div>
+							<div class="item__price-block clearfix">
+								<div class="item__price">85р.</div>
+								<a class="item__amount amount-small">Мало</a>
+								<a class="item__buy" href="#">Купить</a>
+							</div>
 						</div>
-					</div>
-					<div class="item">
-						<a class="item__title">Азбука для православных детей</a>
-						<div class="item__content clearfix">
-							<img src="http://placehold.it/107x145">
-							<p>Книга "Русский патрик" знакомит читателя с жителями самых изветстных русских святых: князей и крестьян, патриархов и простых монахов. Она рассказывает о жизни святых, об их смиренном служении Богу и людям, о мужестве и стойкости...</p>
-						</div>
-						<div class="item__price-block clearfix">
-							<div class="item__price">485р.</div>
-							<a class="item__amount amount-large">Много</a>
-							<a class="item__buy" href="#">Купить</a>
-						</div>
-					</div>
-				</div>
-			</section>
-			<section class="similar-items">
-				<div class="similar-items__title">C этим товаром покупают</div>
-				<div class="similar-items__content">
-					<div class="item">
-						<a class="item__title">Азбука для православных детей</a>
-						<div class="item__content clearfix">
-							<img src="http://placehold.it/107x145">
-							<p>Книга "Русский патрик" знакомит читателя с жителями самых изветстных русских святых: князей и крестьян, патриархов и простых монахов. Она рассказывает о жизни святых, об их смиренном служении Богу и людям, о мужестве и стойкости...</p>
-						</div>
-						<div class="item__price-block clearfix">
-							<div class="item__price">485р.</div>
-							<a class="item__amount amount-large">Много</a>
-							<a class="item__buy" href="#">Купить</a>
-						</div>
-					</div>
-					<div class="item">
-						<a class="item__title">Азбука для православных детей</a>
-						<div class="item__content clearfix">
-							<img src="http://placehold.it/107x145">
-							<p>Книга "Русский патрик" знакомит читателя с жителями самых изветстных русских святых: князей и крестьян, патриархов и простых монахов. Она рассказывает о жизни святых, об их смиренном служении Богу и людям, о мужестве и стойкости...</p>
-						</div>
-						<div class="item__price-block clearfix">
-							<div class="item__price">85р.</div>
-							<a class="item__amount amount-small">Мало</a>
-							<a class="item__buy" href="#">Купить</a>
-						</div>
-					</div>
-					<div class="item">
+						<div class="item">
 							<a class="item__title">Азбука для православных детей</a>
 							<div class="item__content clearfix">
 								<img src="http://placehold.it/107x145">
@@ -295,15 +241,57 @@
 								<a class="item__buy" href="#">Купить</a>
 							</div>
 						</div>
-				</div>
-			</section>
+					</div>
+				</section>
+				<section class="similar-items">
+					<div class="similar-items__title">C этим товаром покупают</div>
+					<div class="similar-items__content">
+						<div class="item">
+							<a class="item__title">Азбука для православных детей</a>
+							<div class="item__content clearfix">
+								<img src="http://placehold.it/107x145">
+								<p>Книга "Русский патрик" знакомит читателя с жителями самых изветстных русских святых: князей и крестьян, патриархов и простых монахов. Она рассказывает о жизни святых, об их смиренном служении Богу и людям, о мужестве и стойкости...</p>
+							</div>
+							<div class="item__price-block clearfix">
+								<div class="item__price">485р.</div>
+								<a class="item__amount amount-large">Много</a>
+								<a class="item__buy" href="#">Купить</a>
+							</div>
+						</div>
+						<div class="item">
+							<a class="item__title">Азбука для православных детей</a>
+							<div class="item__content clearfix">
+								<img src="http://placehold.it/107x145">
+								<p>Книга "Русский патрик" знакомит читателя с жителями самых изветстных русских святых: князей и крестьян, патриархов и простых монахов. Она рассказывает о жизни святых, об их смиренном служении Богу и людям, о мужестве и стойкости...</p>
+							</div>
+							<div class="item__price-block clearfix">
+								<div class="item__price">85р.</div>
+								<a class="item__amount amount-small">Мало</a>
+								<a class="item__buy" href="#">Купить</a>
+							</div>
+						</div>
+						<div class="item">
+								<a class="item__title">Азбука для православных детей</a>
+								<div class="item__content clearfix">
+									<img src="http://placehold.it/107x145">
+									<p>Книга "Русский патрик" знакомит читателя с жителями самых изветстных русских святых: князей и крестьян, патриархов и простых монахов. Она рассказывает о жизни святых, об их смиренном служении Богу и людям, о мужестве и стойкости...</p>
+								</div>
+								<div class="item__price-block clearfix">
+									<div class="item__price">485р.</div>
+									<a class="item__amount amount-large">Много</a>
+									<a class="item__buy" href="#">Купить</a>
+								</div>
+							</div>
+					</div>
+				</section>
+			</div>
 		</div>
-	</div>
+	</main>
 	<footer class="main-footer">
-		<div class="bluebg">
-			<div class="wrap">
-				<div class="footer-wiwgets flex">
-					<div class="f-widget1">
+		<div class="footer-navigation">
+			<div class="wrapper">
+				<div class="footer-widgets flex">
+					<div class="f-widget">
 						<div class="f-w-title">О издательстве</div>
 						<ul>
 							<li><a href="#">О компании</a></li>
@@ -313,7 +301,7 @@
 							<li><a href="#">Магазины</a></li>
 						</ul>
 					</div>
-					<div class="f-widget2">
+					<div class="f-widget">
 						<div class="f-w-title">Интернет магазин</div>
 						<ul>
 							<li><a href="#">Помощь</a></li>
@@ -322,7 +310,7 @@
 							<li><a href="#">Гарантия на товар</a></li>
 						</ul>
 					</div>
-					<div class="f-widget3">
+					<div class="f-widget">
 						<div class="f-w-title">Информация</div>
 						<ul>
 							<li><a href="#">Статьи</a></li>
@@ -330,7 +318,7 @@
 							<li><a href="#">Производители</a></li>
 						</ul>
 					</div>
-					<div class="f-widget4">
+					<div class="f-widget">
 						<div class="f-w-title">Наши книги</div>
 						<ul>
 							<li><a href="#">Священное писание</a></li>
@@ -340,7 +328,7 @@
 							<li><a href="#">Праздники</a></li>
 						</ul>
 					</div>
-					<div class="f-widget5">
+					<div class="f-widget">
 						<div class="f-w-title">Помощь</div>
 						<ul>
 							<li><a href="#">Статьи</a></li>
@@ -351,8 +339,8 @@
 				</div>
 			</div>
 		</div>
-		<div class="wrap">
-			<div class="f-text">2016 © Letopise.com<br>Все права защищены</div>
+		<div class="wrapper clearfix">
+			<div class="f-copyright">2016 © Letopise.com<br>Все права защищены</div>
 			<ul class="f-social">
 				<li><a href="#"><img src="img/icon-fb.jpg" alt=""></a></li>
 				<li><a href="#"><img src="img/icon-vk.jpg" alt=""></a></li>
