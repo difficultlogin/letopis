@@ -38,7 +38,7 @@
     	<![endif]-->
 </head>
 
-<body>
+<body class="index-main">
 	<header class="page-header">
 		<div class="top-line">
 			<div class="wrapper clearfix">
@@ -361,6 +361,20 @@
 				</section>
 			</div>
 		</div>
+		<div class="publisher-list">
+			<ul id="slider-2">
+				<li><a href=""><img src="img/icon-1.jpg" alt="фото1"></a></li>
+				<li><a href=""><img src="img/icon-2.jpg" alt="фото1"></a></li>
+				<li><a href=""><img src="img/icon-3.jpg" alt="фото1"></a></li>
+				<li><a href=""><img src="img/icon-4.jpg" alt="фото1"></a></li>
+				<li><a href=""><img src="img/icon-5.jpg" alt="фото1"></a></li>
+				<li><a href=""><img src="img/icon-6.jpg" alt="фото1"></a></li>
+				<li><a href=""><img src="img/icon-7.jpg" alt="фото1"></a></li>
+				<li><a href=""><img src="img/icon-8.jpg" alt="фото1"></a></li>
+				<li><a href=""><img src="img/icon-9.jpg" alt="фото1"></a></li>
+				<li><a href=""><img src="img/icon-10.jpg" alt="фото1"></a></li>
+			</ul>
+		</div>
 	</main>
 	<footer class="main-footer">
 		<div class="footer-navigation">
@@ -425,11 +439,24 @@
 		</div>
 	</footer>
 
-<!-- bxslider -->
+<!-- page-slider-->
 <script>
 	$('.bxslider').bxSlider({
 		pager: false,
 		slideMargin: 18
+	});
+</script>
+
+<!-- slider-2-->
+
+<script>
+	$('#slider-2').bxSlider({
+		minSlides: 6,
+		maxSlides: 6,
+		pager: false,
+		slideWidth: 160,
+		slideMargin: 18,
+		moveSlides: 1
 	});
 </script>
 

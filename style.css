@@ -93,13 +93,13 @@ p{
 
 .user-block{
 	float: right;
-	width: 35%;
+	width: 28%;
 	justify-content: flex-end;
   -webkit-justify-content: flex-end;
 }
 
 .user-block li{
-	width: 33%;
+	width: 30%;
   text-align: center;
 }
 
@@ -115,9 +115,10 @@ p{
   color: #4b3004;
 }
 
-.user-cart{
+.user-block .user-cart{
 	position: relative;
-	padding-left: 20px;
+  width: 40%;
+	padding-left: 10px;
 }
 
 .user-cart::before{
@@ -785,7 +786,11 @@ label[for="foto-small__2"]{
 
 
 main{
-	margin-bottom: 30px;
+	margin-bottom: 25px;
+}
+
+.index-main main{
+  margin-bottom: 5px;
 }
 
 .footer-navigation{
@@ -809,7 +814,7 @@ main{
 }
 
 .f-widget{
-	width: 20%;
+	width: 19%;
 }
 
 .f-w-title{
@@ -894,12 +899,13 @@ main{
 }
 
 .best-books-list li{
-  width: 33%;
+  width: 33.33%;
   height: 250px;
 }
 
 .best-books-list li img{
   height: 250px;
+  width: 100%;
 }
 
 .book-title{
@@ -998,8 +1004,10 @@ main{
   display: -ms-flex;
   display: -o-flex;
   display: flex;
+  -webkit-flex-wrap: wrap;
   flex-wrap: wrap;
   justify-content: space-between;
+  -webkit-justify-content: space-between;
 }
 
 .popular-items .item{
@@ -1012,12 +1020,12 @@ main{
 }
 
 .popular-items__title{
-  width: 20%;
+  width: 25%;
 }
 
 .filter-section{
   display: inline-block;
-  width: 47%;
+  width: 43%;
   margin-right: 20px;
   text-align: right;
 }
@@ -1069,6 +1077,7 @@ main{
   display: -o-flex;
   display: flex;
   flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
 }
 
 .popular-authors li{
@@ -1096,6 +1105,7 @@ main{
 
 .popular-tags{
   width: 68%;
+  margin-bottom: 20px;
 }
 
 .popular-tags ul{
@@ -1130,4 +1140,40 @@ main{
 .popular-tags .popular-grade__5{
   font-weight: 900;
   font-size: 16px;
+}
+
+.publisher-list{
+  position: relative;
+}
+
+.publisher-list::before{
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 1px;
+  left: 0;
+  top: -5px;
+  background-color: #bbd4e0;
+}
+.publisher-list .bx-wrapper{
+  max-width: 95%;
+  border: none;
+}
+
+.publisher-list .bx-viewport{
+  box-shadow: none;
+}
+.publisher-list .bx-wrapper .bx-prev,
+.publisher-list .bx-wrapper .bx-next{
+  opacity: 1;
+}
+
+.publisher-list .bx-wrapper .bx-prev{
+  background: url('img/control-prev.png') no-repeat center;
+  left: -25px;
+}
+
+.publisher-list .bx-wrapper .bx-next{
+  background: url('img/control-next.png') no-repeat center;
+  right: -25px;
 }
